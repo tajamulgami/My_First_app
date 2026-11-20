@@ -12,7 +12,7 @@ with st.form("Important Information"):
     student_details["name"] = st.text_input("Enter your name*")
     salary = st.number_input("Enter your salary*",min_value=10000,max_value=50000,step=10000,)
     #age = st.slider("Enter your age",min_value=1,max_value=100)
-    student_details["age"] = st.number_input("Enter your age",min_value=1,max_value=100)
+    student_details["age"] = st.number_input("Enter your age",min_value=1,max_value=100,step=10)
     
     student_details["gender"] = st.selectbox("Enter your gender (optional)",["Male","Female"])
 
